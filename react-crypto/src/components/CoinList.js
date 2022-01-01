@@ -44,7 +44,7 @@ if(coinOne.length < 1 && counter!==0){
                     <p className="header">{ing.name}</p>
                     
                     <p className="color">{ing.symbol}</p>
-                    {ing.priceChange < 0 ? (
+                    {ing.priceChange === null ? '': ing.priceChange < 0 ? (
                 <p className="red">
                   {ing.priceChange.toFixed(2)}%
                 </p>
